@@ -1,4 +1,3 @@
-#test sync
 #A script to keep sequences which contain a particular name from a larger fasta file
 from Bio import SeqIO
 import sys
