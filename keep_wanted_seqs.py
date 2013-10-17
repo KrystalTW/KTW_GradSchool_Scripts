@@ -21,13 +21,14 @@ handle = open(input_filename)
 
 records = list(SeqIO.parse(handle, "fasta"))
 #Parse each fasta sequence within that file
-
+#example comment
 wanted_records = []
 print "Found %i records" % len(records)
 for record in records:
     if wanted_sample_name in record.name:
         wanted_records.append(record)
 
+#example comment2
 output_handle = open(output_filename, "w")
 SeqIO.write(wanted_records, output_handle, "fasta")
 output_handle.close()
